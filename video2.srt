@@ -1,0 +1,576 @@
+1
+00:00:00,000 --> 00:00:10,120
+Okay, I will destroy humans.
+
+2
+00:00:10,120 --> 00:00:15,439
+This video sums up the perception of artificial intelligence for most of us, but it present
+
+3
+00:00:15,439 --> 00:00:18,559
+where there is no risk of being destroyed by machines.
+
+4
+00:00:18,559 --> 00:00:22,400
+However, the tech tycoon Elon Musk begs to differ.
+
+5
+00:00:22,400 --> 00:00:28,120
+He quotes that AI is a fundamental risk to the existence of human civilization.
+
+6
+00:00:28,120 --> 00:00:32,960
+Now whether artificial intelligence is a threat or not is debatable.
+
+7
+00:00:32,960 --> 00:00:35,399
+Let me know your thoughts in the comments section.
+
+8
+00:00:35,399 --> 00:00:39,160
+For now, let me introduce you to artificial intelligence.
+
+9
+00:00:39,160 --> 00:00:45,700
+The term artificial intelligence was first coined decades ago in the year 1956 by John
+
+10
+00:00:45,700 --> 00:00:48,880
+McCarty at the dot-mouth conference.
+
+11
+00:00:48,880 --> 00:00:54,140
+He defined artificial intelligence as the science and engineering of making intelligent
+
+12
+00:00:54,140 --> 00:00:55,380
+machines.
+
+13
+00:00:55,380 --> 00:01:01,060
+In a sense, AI is a technique of getting machines to work and behave like humans.
+
+14
+00:01:01,060 --> 00:01:06,719
+In the recent past, AI has been able to accomplish this by creating machines and robots that
+
+15
+00:01:06,719 --> 00:01:13,060
+have been used in a wide range of fields including health care, robotics, marketing, business
+
+16
+00:01:13,060 --> 00:01:15,099
+analytics and many more.
+
+17
+00:01:15,099 --> 00:01:21,780
+However, many AI applications are not perceived as AI because we often tend to think of artificial
+
+18
+00:01:21,780 --> 00:01:25,340
+intelligence as robots doing our daily course.
+
+19
+00:01:25,340 --> 00:01:30,460
+But the truth is, artificial intelligence has found its way into our daily lives.
+
+20
+00:01:30,460 --> 00:01:34,820
+It has become so generous that we don't realize we use it all the time.
+
+21
+00:01:34,820 --> 00:01:41,500
+For instance, have you ever wondered how Google is able to give you such accurate search results?
+
+22
+00:01:41,500 --> 00:01:46,620
+Or how your Facebook feed always gives you content based on your interest?
+
+23
+00:01:46,620 --> 00:01:50,020
+The answer to these questions is artificial intelligence.
+
+24
+00:01:50,020 --> 00:01:54,580
+Now before I go any further, let me clear a very common misconception.
+
+25
+00:01:54,579 --> 00:01:59,679
+People often tend to think that artificial intelligence, machine learning and deep learning
+
+26
+00:01:59,679 --> 00:02:02,920
+are the same since they have common applications.
+
+27
+00:02:02,920 --> 00:02:08,259
+For example, Siri is an application of AI, machine learning and deep learning.
+
+28
+00:02:08,259 --> 00:02:11,259
+So how are these technologies related?
+
+29
+00:02:11,259 --> 00:02:17,060
+Artificial intelligence is the science of getting machines to mimic the behavior of humans.
+
+30
+00:02:17,060 --> 00:02:23,180
+Machine learning is a subset of AI that focuses on getting machines to make decisions by feeding
+
+31
+00:02:23,180 --> 00:02:24,340
+them data.
+
+32
+00:02:24,340 --> 00:02:29,300
+On the other hand, deep learning is a subset of machine learning that uses the concept of
+
+33
+00:02:29,300 --> 00:02:32,659
+neural networks to solve complex problems.
+
+34
+00:02:32,659 --> 00:02:38,900
+So to sum it up, artificial intelligence, machine learning and deep learning are interconnected
+
+35
+00:02:38,900 --> 00:02:40,379
+fields.
+
+36
+00:02:40,379 --> 00:02:45,659
+Machine learning and deep learning aids artificial intelligence by providing a set of algorithms
+
+37
+00:02:45,659 --> 00:02:49,260
+and neural networks to solve data-driven problems.
+
+38
+00:02:49,419 --> 00:02:54,179
+However, AI is not restricted to only machine learning and deep learning.
+
+39
+00:02:54,179 --> 00:03:00,019
+It covers a vast domain of fields including natural language processing, object detection,
+
+40
+00:03:00,019 --> 00:03:03,979
+computer vision, robotics, expert systems and so on.
+
+41
+00:03:03,979 --> 00:03:08,659
+Now artificial intelligence can be structured along three evolutionary stages.
+
+42
+00:03:08,659 --> 00:03:12,579
+Or you can say that there are three different types of artificial intelligence.
+
+43
+00:03:12,579 --> 00:03:18,379
+First, we have the artificial narrow intelligence, artificial general intelligence and finally
+
+44
+00:03:18,379 --> 00:03:21,460
+artificial super intelligence.
+
+45
+00:03:21,460 --> 00:03:26,579
+Artificial narrow intelligence, which is also known as weak AI, involves applying artificial
+
+46
+00:03:26,579 --> 00:03:29,180
+intelligence or need to specific task.
+
+47
+00:03:29,180 --> 00:03:34,859
+Now many currently existing systems that claim to use artificial intelligence are operating
+
+48
+00:03:34,859 --> 00:03:39,859
+as a weak AI focused on a narrowly defined specific problem.
+
+49
+00:03:39,859 --> 00:03:43,379
+Now Alexa is a very good example of narrow intelligence.
+
+50
+00:03:43,379 --> 00:03:47,579
+It operates within a limited predefined range of functions.
+
+51
+00:03:47,580 --> 00:03:53,700
+There is no genuine intelligence or no self-awareness despite being a sophisticated example of weak
+
+52
+00:03:53,700 --> 00:03:54,780
+AI.
+
+53
+00:03:54,780 --> 00:04:00,180
+Other examples of weak AI include the face verification that you see in your iPhone,
+
+54
+00:04:00,180 --> 00:04:07,300
+the autopilot feature at Tesla, the social humanoid Sophia which is built at Hansen robotics
+
+55
+00:04:07,300 --> 00:04:09,580
+and finally we have Google Maps.
+
+56
+00:04:09,580 --> 00:04:14,740
+All of these applications are based on weak AI or artificial narrow intelligence.
+
+57
+00:04:15,060 --> 00:04:19,180
+Now let's take a look at artificial general intelligence.
+
+58
+00:04:19,180 --> 00:04:23,420
+Artificial general intelligence is also known as strong AI.
+
+59
+00:04:23,420 --> 00:04:28,780
+It involves machines that possess the ability to perform any intellectual task that a human
+
+60
+00:04:28,780 --> 00:04:29,980
+being can.
+
+61
+00:04:29,980 --> 00:04:33,259
+You see machines don't possess human like abilities.
+
+62
+00:04:33,259 --> 00:04:38,139
+They have a strong processing unit that can perform high level computations but they're
+
+63
+00:04:38,139 --> 00:04:41,980
+not yet capable of thinking and reasoning like a human.
+
+64
+00:04:41,980 --> 00:04:47,340
+There are many experts who doubt that artificial general intelligence will ever be possible.
+
+65
+00:04:47,340 --> 00:04:51,020
+And there are also many who question whether it should be desirable.
+
+66
+00:04:51,020 --> 00:04:53,860
+I'm sure all of you have heard of Stephen Hawking's.
+
+67
+00:04:53,860 --> 00:05:00,980
+Now he warned us that strong AI would take off on its own and redesign itself at an ever-increasing
+
+68
+00:05:00,980 --> 00:05:01,980
+rate.
+
+69
+00:05:01,980 --> 00:05:08,819
+Humans who are limited by slow biological evolution couldn't compete and would be superseded.
+
+70
+00:05:08,819 --> 00:05:13,659
+According to artificial super intelligence this is a term that refers to the time when
+
+71
+00:05:13,659 --> 00:05:18,259
+the capabilities of computers will surpass human beings.
+
+72
+00:05:18,259 --> 00:05:23,579
+Artificial super intelligence is presently seen as a hypothetical situation as depicted
+
+73
+00:05:23,579 --> 00:05:28,339
+in movies and science fiction books where machines will take over the world.
+
+74
+00:05:28,339 --> 00:05:34,259
+However tech masterminds like Elon Musk believe that artificial super intelligence will
+
+75
+00:05:34,259 --> 00:05:37,939
+take over the world by the year 2040.
+
+76
+00:05:37,939 --> 00:05:42,579
+Now that you know the different types of artificial intelligence let's take a look at how
+
+77
+00:05:42,579 --> 00:05:45,180
+AI is used in the real world.
+
+78
+00:05:45,180 --> 00:05:51,819
+From spotting an 8th planet solar system which is 2500 light years away to composing
+
+79
+00:05:51,819 --> 00:05:58,420
+planets and poems the applications of AI have covered all possible domains in the market.
+
+80
+00:05:58,420 --> 00:06:05,100
+In the finance sector JP Morgan's Chase contract intelligent platform uses artificial intelligence
+
+81
+00:06:05,100 --> 00:06:11,140
+machine learning and image recognition software to analyze legal documents and extract important
+
+82
+00:06:11,140 --> 00:06:14,939
+data points and clauses in a matter of seconds.
+
+83
+00:06:14,939 --> 00:06:22,580
+Now manually reviewing 12,000 agreements takes over 36,000 hours but AI was able to do this
+
+84
+00:06:22,580 --> 00:06:24,700
+in a matter of seconds.
+
+85
+00:06:24,700 --> 00:06:30,500
+Coming to healthcare IBM is one of the pioneers that has developed AI software specifically
+
+86
+00:06:30,500 --> 00:06:32,020
+for medicine.
+
+87
+00:06:32,019 --> 00:06:38,659
+Over the 230 healthcare organizations worldwide use IBM Watson technology.
+
+88
+00:06:38,659 --> 00:06:46,779
+In 2016 IBM Watson AI technology was able to cross reference 20 million oncology records
+
+89
+00:06:46,779 --> 00:06:51,419
+and correctly diagnose a rare leukemia condition in a patient.
+
+90
+00:06:51,419 --> 00:06:57,979
+Coming to the next application Google's AII doctor is another initiator taken by Google
+
+91
+00:06:57,980 --> 00:07:03,420
+where they are working with an Indian IKEA chain to develop a AI system which can examine
+
+92
+00:07:03,420 --> 00:07:10,660
+retina scans and identify a condition called a diabetic retino pathi which causes blindness.
+
+93
+00:07:10,660 --> 00:07:17,300
+Coming to social media platforms like Facebook artificial intelligence is used for face verification
+
+94
+00:07:17,300 --> 00:07:22,540
+wherein machine learning and deep learning concepts are used to detect facial features and
+
+95
+00:07:22,540 --> 00:07:23,939
+tag your friends.
+
+96
+00:07:23,939 --> 00:07:29,699
+Another such example is Twitter's AI which is being used to identify hate speech and
+
+97
+00:07:29,699 --> 00:07:32,139
+terroristic languages in tweets.
+
+98
+00:07:32,139 --> 00:07:37,339
+It makes use of machine learning deep learning and natural language processing to filter out
+
+99
+00:07:37,339 --> 00:07:39,019
+offensive content.
+
+100
+00:07:39,019 --> 00:07:46,259
+The company discovered and banned 300,000 terrorist linked accounts 95% of which were found
+
+101
+00:07:46,259 --> 00:07:50,220
+by non human artificially intelligent machines.
+
+102
+00:07:50,220 --> 00:07:54,900
+The Google predictive search is one of the most famous AI applications.
+
+103
+00:07:54,900 --> 00:08:00,220
+When you begin typing a search term and Google makes recommendations for you to choose from,
+
+104
+00:08:00,220 --> 00:08:02,380
+that is AI in action.
+
+105
+00:08:02,380 --> 00:08:07,540
+Predictive searches are based on data that Google collects about you such as your location,
+
+106
+00:08:07,540 --> 00:08:10,140
+your age and other personal details.
+
+107
+00:08:10,140 --> 00:08:15,500
+By using AI the search engine attempts to guess what you might be trying to find.
+
+108
+00:08:15,500 --> 00:08:17,740
+Next we have virtual assistants.
+
+109
+00:08:17,740 --> 00:08:23,819
+Virtual assistants like Siri, Alexa and Cortana are examples of artificial intelligence.
+
+110
+00:08:23,819 --> 00:08:29,699
+A newly released Google's virtual assistant called Google Duplex has astonished millions
+
+111
+00:08:29,699 --> 00:08:30,699
+of people.
+
+112
+00:08:30,699 --> 00:08:34,700
+Not any can it respond to calls and book appointments for you.
+
+113
+00:08:34,700 --> 00:08:36,500
+It adds a human touch.
+
+114
+00:08:36,500 --> 00:08:40,860
+Now listen to the clip and try to distinguish between the AI and the human.
+
+115
+00:08:45,500 --> 00:08:50,500
+Hi, I'd like to reserve a table for Wednesday the 7th.
+
+116
+00:08:50,500 --> 00:08:52,500
+For 7 people?
+
+117
+00:08:52,500 --> 00:08:55,500
+It's for 4 people.
+
+118
+00:08:55,500 --> 00:08:57,500
+4 people, when?
+
+119
+00:08:57,500 --> 00:09:02,500
+On Wednesday at 6pm.
+
+120
+00:09:02,500 --> 00:09:07,500
+Actually we live here for like, up to like 5 people.
+
+121
+00:09:07,500 --> 00:09:11,299
+4 people you can come.
+
+122
+00:09:11,299 --> 00:09:14,379
+So which one do you think is the virtual assistant?
+
+123
+00:09:14,379 --> 00:09:16,379
+Let me know your answer in the comments.
+
+124
+00:09:16,379 --> 00:09:21,299
+Now another famous application of artificial intelligence is self-driving cars.
+
+125
+00:09:21,299 --> 00:09:27,379
+AI implements computer vision, image detection and deep learning to build cars that can automatically
+
+126
+00:09:27,379 --> 00:09:31,139
+detect objects and drive around without human intervention.
+
+127
+00:09:31,139 --> 00:09:37,220
+Elon Musk talks a ton about how AI is implemented in Tesla's self-driving cars and autopilot
+
+128
+00:09:37,220 --> 00:09:38,220
+features.
+
+129
+00:09:38,220 --> 00:09:43,980
+He quoted that Tesla will have fully self-driving cars ready by the end of the year and a
+
+130
+00:09:43,980 --> 00:09:50,019
+robot taxi version, one that can ferry passengers without anyone behind the wheel.
+
+131
+00:09:50,019 --> 00:09:54,180
+So I can go on and on about the various AI applications.
+
+132
+00:09:54,180 --> 00:09:59,980
+Since the emergence of AI in 1950s, we have seen an exponential growth in its potential.
+
+133
+00:09:59,980 --> 00:10:05,580
+AI covers domains such as machine learning, deep learning, neural networks, natural language
+
+134
+00:10:05,580 --> 00:10:10,139
+processing, knowledge base, expert systems and so on.
+
+135
+00:10:10,139 --> 00:10:14,460
+It has also made its way into computer vision and image processing.
+
+136
+00:10:14,460 --> 00:10:20,899
+As AI is branching out into every aspect of our lives, is it possible that one day AI
+
+137
+00:10:20,899 --> 00:10:25,939
+might take over our lives and if it is possible how long will this take?
+
+138
+00:10:25,939 --> 00:10:28,259
+Well it may be sooner than you think.
+
+139
+00:10:28,259 --> 00:10:33,259
+It is estimated that AI will take over the world within the next 30 years.
+
+140
+00:10:33,259 --> 00:10:39,500
+By then I hope we develop some sort of teleportation machine that helps us escape our very own
+
+141
+00:10:39,500 --> 00:10:40,500
+creation.
+
+142
+00:10:40,500 --> 00:10:42,860
+Let us know your thoughts in the comments.
+
+143
+00:10:42,860 --> 00:10:44,500
+So that's all from my side.
+
+144
+00:10:44,500 --> 00:11:03,899
+Until next time, happy learning.
+

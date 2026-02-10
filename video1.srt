@@ -1,0 +1,828 @@
+1
+00:00:00,000 --> 00:00:12,599
+In today's world, people are more dependent on technology than ever before.
+
+2
+00:00:12,599 --> 00:00:16,500
+From waking up to annoying smartphone alarms, to strolling through their social media accounts
+
+3
+00:00:16,500 --> 00:00:20,839
+and even controlling devices around them, technology is everywhere.
+
+4
+00:00:20,839 --> 00:00:25,080
+With so much technology coming in, the risk of cyber attacks has increased.
+
+5
+00:00:25,399 --> 00:00:31,079
+It's really important to understand and implement cybersecurity measures to protect our valuable information
+
+6
+00:00:31,079 --> 00:00:33,679
+and ensure that our data remains safe.
+
+7
+00:00:33,679 --> 00:00:38,479
+Hi, I welcome you all to this session on Cybersecurity for beginners by Adureka.
+
+8
+00:00:38,479 --> 00:00:42,679
+This will have everything you need to know to get started with Cybersecurity.
+
+9
+00:00:42,679 --> 00:00:46,280
+But before we begin, let's look at our today's agenda.
+
+10
+00:00:46,280 --> 00:00:48,679
+First we have what is Cybersecurity.
+
+11
+00:00:48,679 --> 00:00:52,480
+Here we will discuss the definition and the scope of Cybersecurity.
+
+12
+00:00:52,479 --> 00:00:59,479
+We will also discuss the basic concepts such as the CIA triad, authorization, authentication and non-depudiation.
+
+13
+00:00:59,479 --> 00:01:02,879
+Then we will move on to the origin of Cybersecurity part.
+
+14
+00:01:02,879 --> 00:01:06,879
+There we will discuss the historical background and evolution of Cybersecurity.
+
+15
+00:01:06,879 --> 00:01:11,479
+We will also discuss the key milestones and events that shape this field.
+
+16
+00:01:11,479 --> 00:01:15,479
+Next we will talk about the necessity of Cybersecurity.
+
+17
+00:01:15,479 --> 00:01:19,479
+Here we will discuss the reasons why Cybersecurity is essential.
+
+18
+00:01:19,480 --> 00:01:25,480
+Also we will talk about some examples of real-world incidents and consequences of Cyberattacks.
+
+19
+00:01:25,480 --> 00:01:29,280
+Next we will move on to what the Cybersecurity involves.
+
+20
+00:01:29,280 --> 00:01:33,880
+Here we will talk about the core principles and objectives of Cybersecurity.
+
+21
+00:01:33,880 --> 00:01:41,080
+We will also talk about the different domains within Cybersecurity, like network security, application security and so.
+
+22
+00:01:41,080 --> 00:01:44,880
+Next we will talk about different types of Cybersecurity threats.
+
+23
+00:01:44,879 --> 00:01:50,879
+Here we will talk about the various types of Cybertrids such as malware, phishing, ransomware and so on.
+
+24
+00:01:50,879 --> 00:01:54,879
+Next we can talk about ethical hacking and penetration testing.
+
+25
+00:01:54,879 --> 00:01:59,079
+Here we will discuss the role of ethical hackers, like the White Hat hackers.
+
+26
+00:01:59,079 --> 00:02:04,679
+And we will also talk about the benefits of proactive testing and vulnerability assessments.
+
+27
+00:02:04,679 --> 00:02:09,879
+Next we will find out this video by talking about strategies to enhance Cybersecurity.
+
+28
+00:02:09,879 --> 00:02:15,879
+Here we will discuss the best practices for individuals and organizations to enhance their Cybersecurity.
+
+29
+00:02:15,879 --> 00:02:24,879
+But before we begin with our discussion, please consider subscribing to our YouTube channel and hit the bell icon to stay updated on the latest content from EduReka.
+
+30
+00:02:24,879 --> 00:02:29,879
+Also visit the EduReka website for various Cybersecurity training and certification courses.
+
+31
+00:02:29,879 --> 00:02:32,879
+The link to which is in the description box below.
+
+32
+00:02:32,879 --> 00:02:37,879
+Now let's start with our first topic, what is Cybersecurity?
+
+33
+00:02:37,879 --> 00:02:42,879
+Cybersecurity is a combination of two words, cyber and security.
+
+34
+00:02:42,879 --> 00:02:49,879
+The word cyber refers to computers, networks and programs and security as you all know means protection.
+
+35
+00:02:49,879 --> 00:02:53,879
+Now this gives us the definition of cybersecurity.
+
+36
+00:02:53,879 --> 00:03:02,879
+Cybersecurity is a practice of protecting computer systems, networks, electronic devices and programs from cyber attacks that intend to access,
+
+37
+00:03:02,879 --> 00:03:07,879
+either or destroy sensitive user information and disrupt business operations.
+
+38
+00:03:07,879 --> 00:03:16,879
+Now cybersecurity covers various domains including network security, application security, information security and operation security.
+
+39
+00:03:16,879 --> 00:03:20,879
+Now let's explore the key ideas that form the core of cybersecurity.
+
+40
+00:03:20,879 --> 00:03:24,879
+These concepts help us keep our distal world safe and secure.
+
+41
+00:03:24,879 --> 00:03:27,879
+At first we have the CIA tried.
+
+42
+00:03:27,879 --> 00:03:33,879
+The CIA tried means confidentiality, integrity and availability.
+
+43
+00:03:33,879 --> 00:03:36,879
+Let's talk about confidentiality first.
+
+44
+00:03:36,879 --> 00:03:41,879
+It means making sure only the right people can see the information.
+
+45
+00:03:41,879 --> 00:03:45,879
+For example, it's like having a password to protect our email.
+
+46
+00:03:45,879 --> 00:03:47,879
+Next we have integrity.
+
+47
+00:03:47,879 --> 00:03:51,879
+It says making sure the information is correct and hasn't been changed.
+
+48
+00:03:52,879 --> 00:03:57,879
+For example, this is like checking if a file has been edited without your permission.
+
+49
+00:03:57,879 --> 00:03:59,879
+Next we have availability.
+
+50
+00:03:59,879 --> 00:04:03,879
+It says making sure the information is there when you need it.
+
+51
+00:04:03,879 --> 00:04:08,879
+For example, this is like a website that is always working so that you can use it anytime.
+
+52
+00:04:08,879 --> 00:04:14,879
+Next we will be talking about authorization, authentication and non-dapudiation.
+
+53
+00:04:14,879 --> 00:04:16,879
+Let's start with authorization first.
+
+54
+00:04:16,879 --> 00:04:19,879
+It says dividing what someone can do.
+
+55
+00:04:19,879 --> 00:04:24,879
+For example, this is like being able to read a document but you cannot edit it.
+
+56
+00:04:24,879 --> 00:04:27,879
+Next we have authentication.
+
+57
+00:04:27,879 --> 00:04:29,879
+It says proving who someone is.
+
+58
+00:04:29,879 --> 00:04:34,879
+For example, this is like entering your username and password to log in into our website.
+
+59
+00:04:34,879 --> 00:04:37,879
+Next we have non-dapudiation.
+
+60
+00:04:37,879 --> 00:04:41,879
+It says making sure someone cannot say that they didn't do something.
+
+61
+00:04:41,879 --> 00:04:46,879
+For example, it's like sending an email with a special code that proves that you have sent it.
+
+62
+00:04:46,879 --> 00:04:49,879
+So you cannot deny it later.
+
+63
+00:04:49,879 --> 00:04:51,879
+Now let's move on to our next topic.
+
+64
+00:04:51,879 --> 00:04:53,879
+The origin of cybersecurity.
+
+65
+00:04:53,879 --> 00:05:00,879
+The history of cybersecurity began in 1971 when Bob Thomas developed a virus called Creeper.
+
+66
+00:05:00,879 --> 00:05:07,879
+Creeper was basically a non-malicious piece of code that moved between computers displaying the message
+
+67
+00:05:07,879 --> 00:05:10,879
+I am the creeper catch me if you can.
+
+68
+00:05:10,879 --> 00:05:16,879
+Now in response to this, Ray Thompson came up with the antivirus program known as Reaper.
+
+69
+00:05:16,879 --> 00:05:21,879
+Reaper could locate creeper and utilize its copies from the infected system.
+
+70
+00:05:21,879 --> 00:05:27,879
+Now this marked an early attempt at successfully creating an antivirus software and was the first historical movement
+
+71
+00:05:27,879 --> 00:05:30,879
+when people realized the need of cybersecurity.
+
+72
+00:05:30,879 --> 00:05:32,879
+Let's move on to our next topic.
+
+73
+00:05:32,879 --> 00:05:34,879
+Necessity of cybersecurity.
+
+74
+00:05:34,879 --> 00:05:41,879
+Now that happened in 1971, but in today's digital age, the necessity of cybersecurity has increased,
+
+75
+00:05:41,879 --> 00:05:45,879
+as people are more reliant on technology for their day-to-day needs.
+
+76
+00:05:45,879 --> 00:05:53,879
+Now, cybersecurity is essential because it protects our valuable data and computer systems from malicious attack that happened daily.
+
+77
+00:05:53,879 --> 00:06:02,879
+Without proper security measures, sensitive information such as personal details, financial data and private communications can be exposed to hackers.
+
+78
+00:06:02,879 --> 00:06:07,879
+Let's talk about some real-world examples that showed that how damaging cyber attacks can be.
+
+79
+00:06:07,879 --> 00:06:11,879
+Let's start with the one I cry ransomware attack first.
+
+80
+00:06:11,879 --> 00:06:16,879
+This attack took advantage of a weakness in Windows known as Eternal Blue.
+
+81
+00:06:16,879 --> 00:06:20,879
+This weakness had been leaked by a hacker group a month earlier.
+
+82
+00:06:20,879 --> 00:06:27,879
+Microsoft had already released a security update to fix this problem, but many users had not installed it.
+
+83
+00:06:27,879 --> 00:06:32,879
+This attack affected 230,000 computers in over 150 countries.
+
+84
+00:06:32,879 --> 00:06:35,879
+Next, we have the 2014 Yahoo Attack.
+
+85
+00:06:35,879 --> 00:06:41,879
+Yahoo experienced one of the biggest data breaches ever when about 500 million accounts were hacked.
+
+86
+00:06:41,879 --> 00:06:52,879
+Hackers got into Yahoo system and stole information such as names, emails, addresses, bird dates, phone numbers and even security questions and answers.
+
+87
+00:06:52,879 --> 00:06:54,879
+Next, we have the Adobe Cyber Attack.
+
+88
+00:06:54,879 --> 00:07:02,879
+Over 38 million customer accounts were hacked, including encrypted passwords, credit card details and email addresses.
+
+89
+00:07:02,879 --> 00:07:09,879
+The hackers also stole the source code for some of the Adobe populace software such as the Photoshop and Acrobat software.
+
+90
+00:07:09,879 --> 00:07:12,879
+Next, we have the PlayStation Network Attack.
+
+91
+00:07:12,879 --> 00:07:20,879
+Hackers broke into Sony's PlayStation Network and stole personal information from about 77 million user accounts.
+
+92
+00:07:20,879 --> 00:07:28,879
+Although, credit card information was protected but other sensitive information such as names, addresses, emails and bird dates were not.
+
+93
+00:07:28,879 --> 00:07:34,879
+Because of this, Sony had to shut down their PlayStation Network servers for about 23 days.
+
+94
+00:07:34,879 --> 00:07:38,879
+Moving on to our next topic, what does cybersecurity involves?
+
+95
+00:07:38,879 --> 00:07:47,879
+It involves the practices, technologies and measures that are designed to protect the system's networks and data from various threats and vulnerabilities.
+
+96
+00:07:47,879 --> 00:07:56,879
+Security updates, continuous monitoring and user awareness are effectively required to recognize potential threats like malware and phishing scams.
+
+97
+00:07:56,879 --> 00:08:02,879
+Now, talking about different domains within cyber security. At first, we have network security.
+
+98
+00:08:02,879 --> 00:08:09,879
+It means protecting the devices and data in a computer network from unauthorized access, attacks or damage.
+
+99
+00:08:09,879 --> 00:08:15,879
+Next, we have application security. It involves making sure software programs are safe from hackers.
+
+100
+00:08:16,879 --> 00:08:23,879
+Next, we have identity and access management. It is about controlling who can access what information in a system.
+
+101
+00:08:23,879 --> 00:08:30,879
+Next, we have cloud security. It is about predicting data and systems that are stored and run over the cloud servers.
+
+102
+00:08:30,879 --> 00:08:39,879
+Next, we have incident response. It involves identifying, managing and recovering from cyber incidents to minimize damage and prevent future attacks.
+
+103
+00:08:40,879 --> 00:08:46,879
+Next, we have threat intelligence. It involves gathering and analyzing information about potential cyber threats.
+
+104
+00:08:46,879 --> 00:08:52,879
+Next, and last, we have 4 and 6. It refers to investigating a cyber crime after it happened.
+
+105
+00:08:52,879 --> 00:08:56,879
+Let's move on to our next topic, cybersecurity threats.
+
+106
+00:08:56,879 --> 00:09:01,879
+Now that we understand cybersecurity, let's examine the common forms of cyber security threats.
+
+107
+00:09:01,879 --> 00:09:05,879
+But before that, let's discuss what our cyber threat is.
+
+108
+00:09:05,879 --> 00:09:15,879
+A cyber threat involves malicious actions intended to steal, damage or disrupt data, compromising data confidentiality, integrity and availability.
+
+109
+00:09:15,879 --> 00:09:21,879
+There are 2 common types of cyber threats. Malware attacks and social engineering attacks.
+
+110
+00:09:21,879 --> 00:09:26,879
+Talking about various malware attacks. The first malware we have is viruses.
+
+111
+00:09:26,879 --> 00:09:32,879
+A malware that attaches itself to the host file and spreads when the infected file is executed.
+
+112
+00:09:32,879 --> 00:09:35,879
+The next malware we are going to talk about is worms.
+
+113
+00:09:35,879 --> 00:09:40,879
+It is a malware that spreads by itself without needing to attach to other software.
+
+114
+00:09:40,879 --> 00:09:44,879
+For example, it's like a bomb that digs tunnel in your garden.
+
+115
+00:09:44,879 --> 00:09:46,879
+Damaging plants as it goes.
+
+116
+00:09:46,879 --> 00:09:50,879
+The next malware we are going to talk about is a Trojan.
+
+117
+00:09:50,879 --> 00:09:55,879
+A malware that pretends to be something useful or fun, but is harmful once opened.
+
+118
+00:09:55,879 --> 00:09:58,879
+For example, it's like a fake lizard under a Christmas tree.
+
+119
+00:09:58,879 --> 00:10:01,879
+That looks exciting, but has something scary inside.
+
+120
+00:10:01,879 --> 00:10:03,879
+Next, we have a ransomware.
+
+121
+00:10:03,879 --> 00:10:07,879
+A malware that locks your files and demands money to unlock them.
+
+122
+00:10:07,879 --> 00:10:12,879
+For example, it's like a kidnapper holding something valuable and asking some ransom.
+
+123
+00:10:12,879 --> 00:10:15,879
+Now, let's talk about some social engineering attacks.
+
+124
+00:10:15,879 --> 00:10:19,879
+Social engineering tricks people into giving away their information.
+
+125
+00:10:19,879 --> 00:10:23,879
+The first social engineering attack we are going to talk about is baiting.
+
+126
+00:10:24,879 --> 00:10:29,879
+So baiting involves taking users with some false promises like free price money or lottery
+
+127
+00:10:29,879 --> 00:10:33,879
+that actually contains some hidden malware that leads to a security breach.
+
+128
+00:10:33,879 --> 00:10:38,879
+For example, an attacker might offer a free download that actually installs some malware.
+
+129
+00:10:38,879 --> 00:10:40,879
+Next, we have phishing.
+
+130
+00:10:40,879 --> 00:10:44,879
+Fishing involves sending fake emails to a steel personal information.
+
+131
+00:10:44,879 --> 00:10:50,879
+For example, an attacker sends an email pretending to be from your bank asking for your account details.
+
+132
+00:10:50,879 --> 00:10:52,879
+Next, we have phishing.
+
+133
+00:10:52,879 --> 00:10:54,879
+A phishing that is done through voice calls.
+
+134
+00:10:54,879 --> 00:11:00,879
+For example, a scammer calling you pretending to be from a tech support and asking for your password.
+
+135
+00:11:00,879 --> 00:11:02,879
+The next attack we have is phishing.
+
+136
+00:11:02,879 --> 00:11:05,879
+A phishing done through text messages.
+
+137
+00:11:05,879 --> 00:11:12,879
+For example, an attacker sends in text messages with a link that leads to a fake website that steals your information.
+
+138
+00:11:12,879 --> 00:11:17,879
+Now, there are many other ways that attacker can harm your computer or steal information.
+
+139
+00:11:17,879 --> 00:11:20,879
+For example, we have denial of service attack.
+
+140
+00:11:20,879 --> 00:11:24,879
+What it does is it overloads your website and makes it unavailable.
+
+141
+00:11:24,879 --> 00:11:28,879
+Next, we have a distributed denial of service attack.
+
+142
+00:11:28,879 --> 00:11:31,879
+It uses multiple computers to launch a loss attack.
+
+143
+00:11:31,879 --> 00:11:34,879
+Next, we have man in the middle attack.
+
+144
+00:11:34,879 --> 00:11:39,879
+It intercepts communication between two parties to steal or alter your information.
+
+145
+00:11:39,879 --> 00:11:41,879
+Next, we have a SQL injection attack.
+
+146
+00:11:41,879 --> 00:11:46,879
+It injects malicious code into a database query to access or change the data.
+
+147
+00:11:46,879 --> 00:11:49,879
+Next, we have zero-day exploits.
+
+148
+00:11:49,879 --> 00:11:53,879
+It says attacking a software vulnerability that is unknown to the software maker.
+
+149
+00:11:53,879 --> 00:11:59,879
+For example, it's like finding a exploit or a secret door in a house before the owners knows it.
+
+150
+00:11:59,879 --> 00:12:03,879
+Moving on to our next topic, ethical hacking and penetration testing.
+
+151
+00:12:03,879 --> 00:12:11,879
+Ethical hacking and penetration testing are ways to find and fix security weakness in a computer system or network before hackers can exploit them.
+
+152
+00:12:11,879 --> 00:12:15,879
+First, we will talk about the role of an ethical hacker in cybersecurity.
+
+153
+00:12:15,879 --> 00:12:17,879
+Let's start with what they do.
+
+154
+00:12:17,879 --> 00:12:22,879
+Ethical hackers are security experts who are paid to hack into systems legally.
+
+155
+00:12:22,879 --> 00:12:24,879
+Now, why do they do it?
+
+156
+00:12:24,879 --> 00:12:29,879
+Their goal is to find security problems and fix weakness before an attacker can find them.
+
+157
+00:12:29,879 --> 00:12:31,879
+Now, how do they help?
+
+158
+00:12:31,879 --> 00:12:36,879
+By identifying and fixing these problems, ethical hackers help protect system and information from cyber attacks.
+
+159
+00:12:36,879 --> 00:12:41,879
+Next, we will discuss the role of penetration testing in cybersecurity.
+
+160
+00:12:41,879 --> 00:12:43,879
+The first role is the sync security.
+
+161
+00:12:43,879 --> 00:12:47,879
+Penetational testers try to break into a system just like real hackers would.
+
+162
+00:12:47,879 --> 00:12:49,879
+Next, they find weaknesses.
+
+163
+00:12:49,879 --> 00:12:53,879
+They look for ways to get past defenses like guessing passwords.
+
+164
+00:12:53,879 --> 00:12:55,879
+Then, it comes to fixing problems.
+
+165
+00:12:55,879 --> 00:13:01,879
+When they find a problem, they inform the development team to fix it so that the real hackers can't exploit them.
+
+166
+00:13:01,879 --> 00:13:03,879
+Moving on to the last topic for this video.
+
+167
+00:13:03,879 --> 00:13:06,879
+Strategies to enhance cyber security.
+
+168
+00:13:06,879 --> 00:13:12,879
+These are the strategies that normal users and organizations should use to enhance the security of their distilled assets.
+
+169
+00:13:12,879 --> 00:13:14,879
+Let's start with the normal users first.
+
+170
+00:13:14,879 --> 00:13:17,879
+First, we have this strong password management.
+
+171
+00:13:17,879 --> 00:13:21,879
+Use strong passwords that include a mix of letters, numbers and symbols.
+
+172
+00:13:21,879 --> 00:13:24,879
+Avoid using the same passwords across different accounts.
+
+173
+00:13:24,879 --> 00:13:28,879
+Next, we have used two factor authentication and multi factor authentication.
+
+174
+00:13:28,879 --> 00:13:36,879
+Use methods like OTPs, authentication apps and fingerprint scanners in addition to the passwords so that you can add an extra layer of security.
+
+175
+00:13:36,879 --> 00:13:39,879
+Next, we have is safe internet practices.
+
+176
+00:13:39,879 --> 00:13:43,879
+Be careful when clicking on links or downloading files from unknown software.
+
+177
+00:13:43,879 --> 00:13:45,879
+Next, we have this data backup.
+
+178
+00:13:45,879 --> 00:13:50,879
+Make copies of important files so that you won't lose them if something happens with your device.
+
+179
+00:13:50,879 --> 00:13:53,879
+Next, we have is privacy settings and privacy permissions.
+
+180
+00:13:53,879 --> 00:13:59,879
+Check and adjust the privacy settings on your social media and apps so that you can control who can see your information.
+
+181
+00:13:59,879 --> 00:14:02,879
+Next, we have is awareness and education.
+
+182
+00:14:02,879 --> 00:14:07,879
+Learn about common tricks that scammers use so that you can avoid falling into the tricks.
+
+183
+00:14:07,879 --> 00:14:11,879
+Now, let's discuss the strategies organizations should use.
+
+184
+00:14:11,879 --> 00:14:13,879
+At first, we have strong password policy.
+
+185
+00:14:13,879 --> 00:14:18,879
+Create rules for employees to make strong passwords and update them regularly.
+
+186
+00:14:18,879 --> 00:14:20,879
+Implement multi factor authentication.
+
+187
+00:14:20,879 --> 00:14:25,879
+Make employees use more than one way to prove who they are when logging into the systems.
+
+188
+00:14:25,879 --> 00:14:28,879
+Next, we have regular software and system updates.
+
+189
+00:14:28,879 --> 00:14:33,879
+Keep everything up to date to fix problems that could let hackers in.
+
+190
+00:14:33,879 --> 00:14:38,879
+Next, we have is having a secure network firewall and intrusion detection system.
+
+191
+00:14:38,879 --> 00:14:44,879
+A strong firewall and ideas should be used to monitor the network traffic entering and leaving the company's network.
+
+192
+00:14:44,879 --> 00:14:48,879
+Next, we have is a backup and disaster recovery plan.
+
+193
+00:14:48,879 --> 00:14:54,879
+Make a plan to copy data often and practice getting it back so the companies can keep working if something goes wrong.
+
+194
+00:14:54,879 --> 00:14:57,879
+Next, we have monitoring security logs.
+
+195
+00:14:57,879 --> 00:15:02,879
+Monitor the company's computer systems to save anyone who is trying to access them without permission.
+
+196
+00:15:02,879 --> 00:15:05,879
+Now that we have covered all the topics in this video,
+
+197
+00:15:05,879 --> 00:15:09,879
+it's clear how vital cyber security is in our interconnected world.
+
+198
+00:15:09,879 --> 00:15:13,879
+The internet offers amazing opportunities but also brings some serious risks.
+
+199
+00:15:13,879 --> 00:15:17,879
+Strong cyber security isn't just a good idea, it's essential.
+
+200
+00:15:17,879 --> 00:15:19,879
+Thank you for watching this video.
+
+201
+00:15:19,879 --> 00:15:22,879
+I hope you liked the content and this content will help you in your future.
+
+202
+00:15:22,879 --> 00:15:26,879
+Thanks for watching and see you in our next video.
+
+203
+00:15:26,879 --> 00:15:29,879
+I hope you have enjoyed listening to this video.
+
+204
+00:15:29,879 --> 00:15:34,879
+Please be kind enough to like it and you can comment any of your doubts and queries
+
+205
+00:15:34,879 --> 00:15:37,879
+and we will reply them at the earliest.
+
+206
+00:15:37,879 --> 00:15:43,879
+Do look out for more videos in our playlist and subscribe to Eddie Rika channel to learn more.
+
+207
+00:15:43,879 --> 00:15:45,879
+Happy learning!
+

@@ -1,0 +1,920 @@
+1
+00:00:00,000 --> 00:00:13,919
+Hello everyone and welcome to another exciting video on Cybersecurity by Idureka.
+
+2
+00:00:13,919 --> 00:00:20,440
+In today's video, we will explore SSRF attacks, also known as Service Site Request for Jury,
+
+3
+00:00:20,440 --> 00:00:26,320
+a critical vulnerability that can exploit the trust web service placed in internal resources.
+
+4
+00:00:26,320 --> 00:00:31,399
+We will break down how SSRF attacks work, the dangers that bring to your web applications
+
+5
+00:00:31,399 --> 00:00:36,640
+and most importantly, the steps you can take to secure your system from these threats.
+
+6
+00:00:36,640 --> 00:00:41,759
+So whether you are a developer, a site security professional or someone eager to understand
+
+7
+00:00:41,759 --> 00:00:47,960
+how attackers manipulate web servers to do their bidding, this video is packed with insights
+
+8
+00:00:47,960 --> 00:00:49,840
+you won't want to miss.
+
+9
+00:00:49,840 --> 00:00:53,560
+So first, let's take a look at our today's agenda.
+
+10
+00:00:53,560 --> 00:01:01,760
+So first, we will understand what SSRF is next, we will see how SSRF works, then we will
+
+11
+00:01:01,760 --> 00:01:07,400
+explore the impact of SSRF attacks and this attacks can cause serious problems like data
+
+12
+00:01:07,400 --> 00:01:11,920
+leaks, internal network access or further system compromise.
+
+13
+00:01:11,920 --> 00:01:15,280
+After that, we will look at the types of SSRF attacks.
+
+14
+00:01:15,280 --> 00:01:21,120
+So, there are different forms including blind SSRF where attackers get no direct response
+
+15
+00:01:21,120 --> 00:01:23,439
+but still cause damage.
+
+16
+00:01:23,719 --> 00:01:26,840
+Next, we will dive deeper into blind SSRF.
+
+17
+00:01:26,840 --> 00:01:32,799
+Finally, we will learn how to prevent SSRF using input validation, blocking internal
+
+18
+00:01:32,799 --> 00:01:37,120
+IPs and limiting server access can help keep systems safe.
+
+19
+00:01:37,120 --> 00:01:41,959
+And by the end of this video, you will have a thorough understanding of SSRF vulnerabilities
+
+20
+00:01:41,959 --> 00:01:44,039
+and how to defend against them.
+
+21
+00:01:44,039 --> 00:01:48,519
+But before we begin, please like, share and subscribe to Idureka's YouTube channel and
+
+22
+00:01:48,519 --> 00:01:52,799
+hit the bell icon to stay updated on the latest content from Idureka.
+
+23
+00:01:52,799 --> 00:01:58,120
+Also, check out the certified ethical hacking codes designed in partnership with AC Council
+
+24
+00:01:58,120 --> 00:02:00,840
+to elevate your cybersecurity skills.
+
+25
+00:02:00,840 --> 00:02:07,719
+This course offers a globally recognized CEHV13 AI certification and features 20 comprehensive
+
+26
+00:02:07,719 --> 00:02:13,840
+modules that covered over 500 attack techniques enhanced by AI GPT tools.
+
+27
+00:02:13,840 --> 00:02:18,919
+You will gain hands-on experience through 221 practical labs and benefit from round-clock
+
+28
+00:02:18,919 --> 00:02:21,960
+support provided by certified professionals.
+
+29
+00:02:21,960 --> 00:02:26,719
+It access to exclusive e-course web and an example to from the AC Council.
+
+30
+00:02:26,719 --> 00:02:31,640
+This course is your gateway to mastering ethical hacking and securing a rebarging career
+
+31
+00:02:31,640 --> 00:02:32,640
+in cyber defense.
+
+32
+00:02:32,640 --> 00:02:36,200
+So, check out the course link given in the description box below.
+
+33
+00:02:36,200 --> 00:02:42,040
+So, let's start by understanding SSRF or server side request forgery.
+
+34
+00:02:42,040 --> 00:02:48,280
+SSRF is a security flaw that occurs when an attacker manipulates a web application or
+
+35
+00:02:48,280 --> 00:02:51,360
+API to request internal resources.
+
+36
+00:02:51,360 --> 00:02:56,720
+This internal resources could include sensitive data, private systems or even services that
+
+37
+00:02:56,720 --> 00:02:59,760
+are not meant to be accessible externally.
+
+38
+00:02:59,760 --> 00:03:05,560
+And by exploiting these vulnerabilities, attackers can potentially gain unauthorized access,
+
+39
+00:03:05,560 --> 00:03:10,560
+expose sensitive data, compromise systems and even execute malicious code remotely.
+
+40
+00:03:10,560 --> 00:03:17,080
+Now that we know what SSRF is, let's dive into how this vulnerability works.
+
+41
+00:03:17,080 --> 00:03:23,200
+In a web application that allows users to import data from a URL, publish data to a URL
+
+42
+00:03:23,200 --> 00:03:25,920
+or fetch data from a remote resource.
+
+43
+00:03:25,920 --> 00:03:30,480
+But what if the application doesn't validate or sanitize the user provided URLs?
+
+44
+00:03:30,480 --> 00:03:34,560
+So, the application becomes vulnerable to an SSRF attack.
+
+45
+00:03:34,560 --> 00:03:37,080
+So, here's how it works.
+
+46
+00:03:37,080 --> 00:03:42,880
+The attacker finds an input field, form or parameter in the application where they can specify
+
+47
+00:03:42,880 --> 00:03:43,880
+a URL.
+
+48
+00:03:43,879 --> 00:03:48,879
+And instead of providing a legitimate URL, the attacker craft a malicious one.
+
+49
+00:03:48,879 --> 00:03:54,900
+So, this URL could point to internal systems, private APIs or even metadata services in
+
+50
+00:03:54,900 --> 00:03:56,639
+cloud environments.
+
+51
+00:03:56,639 --> 00:04:02,680
+For example, a common target is the metadata service in cloud servers which can be accessed
+
+52
+00:04:02,680 --> 00:04:04,280
+via this.
+
+53
+00:04:04,280 --> 00:04:10,280
+Then these services often store sensitive information such as configuration details or authentication
+
+54
+00:04:10,280 --> 00:04:11,280
+keys.
+
+55
+00:04:11,280 --> 00:04:16,639
+The server trusting the user's input process, this malicious URL and it makes a server-side
+
+56
+00:04:16,639 --> 00:04:21,279
+request to a specified resource or knowingly carrying out the attacker's commands.
+
+57
+00:04:21,279 --> 00:04:26,560
+So, through this manipulation, an attacker can access sensitive internal resources such
+
+58
+00:04:26,560 --> 00:04:29,319
+as private database or rest APIs.
+
+59
+00:04:29,319 --> 00:04:34,920
+Next, exploit resources that assume all requests from the server are trustworthy.
+
+60
+00:04:34,920 --> 00:04:39,680
+Then scan internal systems to identify weaknesses or open ports.
+
+61
+00:04:39,680 --> 00:04:45,600
+To extract sensitive data and expel trade to an external location they control, SSRF
+
+62
+00:04:45,600 --> 00:04:50,959
+has become so prominent that it is listed among the old vaps top 10 vulnerabilities.
+
+63
+00:04:50,959 --> 00:04:56,399
+A widely recognized list of the most critical web applications security risk.
+
+64
+00:04:56,399 --> 00:05:00,600
+This highlights just how severe and common SSRF attacks are.
+
+65
+00:05:00,600 --> 00:05:05,840
+Now that we understand how SSRF works, let's explore the real world impacts these attacks
+
+66
+00:05:05,840 --> 00:05:09,439
+can have on organizations and their systems.
+
+67
+00:05:09,439 --> 00:05:13,439
+A successful SSRF attack can have far reaching consequences.
+
+68
+00:05:13,439 --> 00:05:17,519
+First, here we have unauthorized access.
+
+69
+00:05:17,519 --> 00:05:23,680
+Attacters can gain access to sensitive configuration such as server finds, cloud metadata or even
+
+70
+00:05:23,680 --> 00:05:25,199
+open ports.
+
+71
+00:05:25,199 --> 00:05:30,600
+For example, they might extract credentials or manipulate configurations to further exploit
+
+72
+00:05:30,600 --> 00:05:31,600
+the system.
+
+73
+00:05:31,600 --> 00:05:34,680
+Next, internal ports scanning.
+
+74
+00:05:34,680 --> 00:05:39,360
+With SSRF, attackers can perform internal network scans, identifying
+
+75
+00:05:39,360 --> 00:05:42,520
+weak or unprotected services.
+
+76
+00:05:42,520 --> 00:05:46,319
+This reconnaissance helps them plan more advanced attacks.
+
+77
+00:05:46,319 --> 00:05:48,480
+Next, exploit chaining.
+
+78
+00:05:48,480 --> 00:05:53,920
+SSRF vulnerabilities are often a stepping stone to most severe exploits, like remote code
+
+79
+00:05:53,920 --> 00:05:57,520
+execution or reflected XSS attacks.
+
+80
+00:05:57,520 --> 00:06:02,879
+This means a simple SSRF vulnerability can lead to a complete system compromise.
+
+81
+00:06:02,879 --> 00:06:06,120
+And then we have malicious onward attacks.
+
+82
+00:06:06,120 --> 00:06:11,120
+SSRF can exploit SSRF to launch malicious requests to external systems.
+
+83
+00:06:11,120 --> 00:06:15,920
+These requests appear to originate from the victim organization leading to reputational
+
+84
+00:06:15,920 --> 00:06:16,920
+damage.
+
+85
+00:06:16,920 --> 00:06:23,079
+Now, let's talk about a real world examples of the devastating impact SSRF can have.
+
+86
+00:06:23,079 --> 00:06:32,920
+In early 2024, a critical SSRF vulnerability, CVE-224-21893 in IvantiConnect Secure and
+
+87
+00:06:32,920 --> 00:06:36,720
+Policies Secure Products was massively exploited.
+
+88
+00:06:36,720 --> 00:06:42,160
+This flaw allowed attackers to bypass authentication and access restricted resources.
+
+89
+00:06:42,160 --> 00:06:48,080
+And if we talk about its impact, over 170 unique IPs were used for attacks aiming to establish
+
+90
+00:06:48,080 --> 00:06:51,680
+reverse shells and extract sensitive data.
+
+91
+00:06:51,680 --> 00:06:56,600
+Great actors changed this vulnerability with others, achieving unauthenticated remote
+
+92
+00:06:56,600 --> 00:06:58,240
+code execution.
+
+93
+00:06:58,240 --> 00:07:05,840
+And over 28,000 Ivanti devices were identified as exploit across 145 countries with hundreds
+
+94
+00:07:05,840 --> 00:07:07,840
+confirmed compromised.
+
+95
+00:07:07,840 --> 00:07:13,640
+Organizations including the European Union issued urgent advices to mitigate the risk.
+
+96
+00:07:13,640 --> 00:07:19,040
+So, this incident highlights the massive risk SSRF poses, especially in today's interconnected
+
+97
+00:07:19,040 --> 00:07:21,040
+systems and cloud environments.
+
+98
+00:07:21,040 --> 00:07:26,280
+So, now that we have explored the impact of SSRF attacks, let's see their different
+
+99
+00:07:26,279 --> 00:07:27,279
+attacks.
+
+100
+00:07:27,279 --> 00:07:31,479
+Understanding these categories will help you grab the various ways attackers exploit
+
+101
+00:07:31,479 --> 00:07:32,479
+this vulnerability.
+
+102
+00:07:32,479 --> 00:07:35,639
+So, here are the types of SSRF attacks.
+
+103
+00:07:35,639 --> 00:07:41,239
+SSRF can manifest in different ways, depending on what the attackers is targeting.
+
+104
+00:07:41,239 --> 00:07:44,679
+So, we will explore three primary types.
+
+105
+00:07:44,679 --> 00:07:47,879
+First, attacks targeting the server itself.
+
+106
+00:07:47,879 --> 00:07:50,719
+Next, cross-site port attacks.
+
+107
+00:07:50,720 --> 00:07:57,000
+And finally, meta data exploitation in AWS, Azure and Oracle, cloud environments.
+
+108
+00:07:57,000 --> 00:08:02,840
+First, we will talk about SSRF attacks where the server itself becomes the target.
+
+109
+00:08:02,840 --> 00:08:05,440
+So, accessing restricted URLs.
+
+110
+00:08:05,440 --> 00:08:11,240
+So, imagine a web application that lets user load content from a URL.
+
+111
+00:08:11,240 --> 00:08:16,440
+Now, if there is no proper validation, an attacker could change the URL to something internal
+
+112
+00:08:16,440 --> 00:08:17,440
+like this.
+
+113
+00:08:17,920 --> 00:08:22,439
+Okay, so this could expose sensitive data or admin panels.
+
+114
+00:08:22,439 --> 00:08:25,279
+Next, reading files on the server.
+
+115
+00:08:25,279 --> 00:08:30,240
+So sometimes attackers use SSRF to access local files on the server.
+
+116
+00:08:30,240 --> 00:08:34,480
+For example, they could craft a request to something like this.
+
+117
+00:08:34,480 --> 00:08:39,919
+This might give them a list of system users, which is a valuable first step in hacking.
+
+118
+00:08:39,919 --> 00:08:42,919
+Then, using uncommon protocols.
+
+119
+00:08:42,919 --> 00:08:48,599
+SSRF can also abuse less common protocols like FTP or GoFur.
+
+120
+00:08:48,599 --> 00:08:54,519
+For example, an attacker could send emails or interact with internal APIs using payloads
+
+121
+00:08:54,519 --> 00:08:56,240
+like this.
+
+122
+00:08:56,240 --> 00:09:01,479
+Next, let's examine cross-site port attacks or XSPA.
+
+123
+00:09:01,479 --> 00:09:07,639
+So, in this type of attack, SSRF scans open ports or services inside a network.
+
+124
+00:09:07,639 --> 00:09:09,839
+So first, we have scanning ports.
+
+125
+00:09:09,840 --> 00:09:16,240
+An attacker could make the server check if the ports are open on the network, such as this.
+
+126
+00:09:16,240 --> 00:09:18,879
+Next, we have probing private IPs.
+
+127
+00:09:18,879 --> 00:09:22,800
+They might even scan private IP range like this.
+
+128
+00:09:22,800 --> 00:09:25,280
+Here, as you can see on the screen.
+
+129
+00:09:25,280 --> 00:09:29,920
+So this helps them map out the network and find services to target.
+
+130
+00:09:29,920 --> 00:09:34,080
+Finally, we have exploitations of cloud metadata endpoints.
+
+131
+00:09:34,080 --> 00:09:39,680
+This endpoint stores sensitive information like access keys, configurations and instance
+
+132
+00:09:39,680 --> 00:09:40,680
+details.
+
+133
+00:09:40,680 --> 00:09:44,240
+Now, let's see how this works for AWS Cloud.
+
+134
+00:09:44,240 --> 00:09:48,320
+In AWS, there's a special endpoint that stores metadata.
+
+135
+00:09:48,320 --> 00:09:50,639
+It's always available at this.
+
+136
+00:09:50,639 --> 00:09:56,160
+So if attackers exploit SSRF to hit this endpoint, they can extract instance details like
+
+137
+00:09:56,160 --> 00:09:59,120
+the server's hostname or IP address.
+
+138
+00:09:59,120 --> 00:10:03,280
+Also, IAM role credentials which can look like this.
+
+139
+00:10:03,279 --> 00:10:08,319
+So with this credentials, attackers might access AWS services or steal data.
+
+140
+00:10:08,319 --> 00:10:13,679
+Now that we have exploit different types of SSRF attacks, let's take it a step further
+
+141
+00:10:13,679 --> 00:10:20,159
+and examine blind SSRF vulnerability, which is a bit more challenging but equally fascinating.
+
+142
+00:10:20,159 --> 00:10:26,559
+So now, we will explore blind SSRF and its potential impact and how attackers find and exploit
+
+143
+00:10:26,559 --> 00:10:28,159
+this vulnerability.
+
+144
+00:10:28,159 --> 00:10:33,679
+Plus, we will talk about some advanced techniques used to elevate blind SSRF attacks.
+
+145
+00:10:33,679 --> 00:10:35,679
+So let's get into it.
+
+146
+00:10:35,679 --> 00:10:39,120
+So first, what is blind SSRF?
+
+147
+00:10:39,120 --> 00:10:45,279
+Blind SSRF occurs when a server processes a back-end history-tp request based on an attacker's
+
+148
+00:10:45,279 --> 00:10:46,279
+URL.
+
+149
+00:10:46,279 --> 00:10:50,600
+But the response isn't visible to the attackers in the front end.
+
+150
+00:10:50,600 --> 00:10:55,159
+So you can make the server send requests to other systems but can't directly see the
+
+151
+00:10:55,159 --> 00:10:56,159
+result.
+
+152
+00:10:56,159 --> 00:10:58,639
+Now, let's talk about the impact.
+
+153
+00:10:58,639 --> 00:11:04,399
+At the first glance, the impact of blind SSRF might seem lower compared to regular SSRF
+
+154
+00:11:04,399 --> 00:11:07,079
+because you can't directly retrieve sensitive data.
+
+155
+00:11:07,079 --> 00:11:13,120
+However, it's still dangerous because attackers can probe internal systems or hidden applications
+
+156
+00:11:13,120 --> 00:11:18,240
+and they might uncover vulnerabilities like shell shock or exploit servers that haven't
+
+157
+00:11:18,240 --> 00:11:19,240
+been passed.
+
+158
+00:11:19,240 --> 00:11:24,720
+And in external cases, they could even achieve remote code execution gaining complete
+
+159
+00:11:24,720 --> 00:11:26,759
+control over the server.
+
+160
+00:11:26,759 --> 00:11:32,360
+While it's not always as direct, blind SSRF still poses a serious risk.
+
+161
+00:11:32,360 --> 00:11:34,639
+So now comes the interesting part.
+
+162
+00:11:34,639 --> 00:11:38,600
+How to find and exploit blind SSRF vulnerabilities?
+
+163
+00:11:38,600 --> 00:11:41,840
+So first, is using out-of-brand techniques.
+
+164
+00:11:41,840 --> 00:11:46,720
+The most effective way to detect blind SSRF is by using out-of-brand techniques also
+
+165
+00:11:46,720 --> 00:11:49,120
+known as OASD.
+
+166
+00:11:49,120 --> 00:11:50,680
+And here's how it works.
+
+167
+00:11:50,679 --> 00:11:55,120
+You can create a unique domain name that point to a system you control.
+
+168
+00:11:55,120 --> 00:12:00,120
+Next, send these domain names in your payloads to the vulnerable application.
+
+169
+00:12:00,120 --> 00:12:04,919
+And if the application is vulnerable, it will make an HTTP request to your domain and
+
+170
+00:12:04,919 --> 00:12:07,279
+you will detect that interaction.
+
+171
+00:12:07,279 --> 00:12:11,679
+So this way, even though the server's response isn't visible to you, you can confirm its
+
+172
+00:12:11,679 --> 00:12:13,879
+behavior in directly.
+
+173
+00:12:13,879 --> 00:12:16,319
+Next is using burp collaborator.
+
+174
+00:12:16,320 --> 00:12:21,440
+The easiest tool for performing OASD testing is burp collaborator.
+
+175
+00:12:21,440 --> 00:12:23,440
+And here's how you can use it.
+
+176
+00:12:23,440 --> 00:12:27,360
+First, generate a unique domain name in burp collaborator.
+
+177
+00:12:27,360 --> 00:12:32,360
+Then inject this domain name into your payload and send it to the application.
+
+178
+00:12:32,360 --> 00:12:34,800
+Next, monitor for interactions.
+
+179
+00:12:34,800 --> 00:12:39,920
+Like DNS, lookups or HTTP requests from the application to your domain.
+
+180
+00:12:39,920 --> 00:12:43,120
+So if you detect any interaction, then congratulations.
+
+181
+00:12:43,120 --> 00:12:46,679
+You have found a blind SSRF vulnerability.
+
+182
+00:12:46,679 --> 00:12:51,279
+Now that we have explored blind SSRF vulnerabilities and their potential impact.
+
+183
+00:12:51,279 --> 00:12:56,279
+Let's talk about the techniques to prevent SSRF attacks effectively.
+
+184
+00:12:56,279 --> 00:12:59,919
+Preventing SSRF attacks require a multi-layered approach.
+
+185
+00:12:59,919 --> 00:13:04,039
+Since attackers can use creative ways to bypass simple defenses.
+
+186
+00:13:04,039 --> 00:13:08,080
+And here are some of the best practices to mitigate SSRF risk.
+
+187
+00:13:08,080 --> 00:13:11,879
+First we have avoid blacklist and use whitelist instead.
+
+188
+00:13:11,879 --> 00:13:15,279
+So blacklist rely on blocking specific inputs.
+
+189
+00:13:15,279 --> 00:13:22,279
+But attackers can easily bypass them using wildcard DNS services, HTTP redirects or alternate
+
+190
+00:13:22,279 --> 00:13:24,080
+IP encoding.
+
+191
+00:13:24,080 --> 00:13:29,919
+While whitelist only allows access to trusted IP addresses or DNS names that the application
+
+192
+00:13:29,919 --> 00:13:30,919
+needs.
+
+193
+00:13:30,919 --> 00:13:34,799
+So this limits the scope of potentially malicious request.
+
+194
+00:13:34,799 --> 00:13:39,039
+Next preventing attack is validate and sanitize user input.
+
+195
+00:13:39,039 --> 00:13:42,839
+To ensure that the user provided URLs are thoroughly validated.
+
+196
+00:13:42,839 --> 00:13:48,279
+Also, reject requests to private IP addresses or disallowed domains.
+
+197
+00:13:48,279 --> 00:13:53,039
+The next way to prevent attack is by handling server responses carefully.
+
+198
+00:13:53,039 --> 00:13:58,120
+Never forward raw response bodies received from server initiated requests directly to the
+
+199
+00:13:58,120 --> 00:13:59,120
+client.
+
+200
+00:13:59,120 --> 00:14:04,679
+Instead, filter the responses and only rely expected data to prevent leaking sensitive server
+
+201
+00:14:04,679 --> 00:14:06,839
+information to attackers.
+
+202
+00:14:06,840 --> 00:14:10,120
+Next restrict URLs schemas.
+
+203
+00:14:10,120 --> 00:14:15,879
+Allow only the necessary URLs schemas such as HTTP and HTTPs.
+
+204
+00:14:15,879 --> 00:14:20,639
+Then unused schemas like file, go for or dictionary.
+
+205
+00:14:20,639 --> 00:14:24,800
+To block attackers from exploiting these protocols.
+
+206
+00:14:24,800 --> 00:14:27,680
+Next secure internal services.
+
+207
+00:14:27,680 --> 00:14:33,080
+Many internal services for example, Redis, MongoDB or elastic research don't require
+
+208
+00:14:33,080 --> 00:14:34,960
+authentication by default.
+
+209
+00:14:34,960 --> 00:14:40,160
+Reforce authentication for all services, even those operating within local networks.
+
+210
+00:14:40,160 --> 00:14:43,080
+Next monitor and block request.
+
+211
+00:14:43,080 --> 00:14:47,160
+Implement logging for outgoing request initiated by the server.
+
+212
+00:14:47,160 --> 00:14:53,560
+Analyze log-sregularly to identify abnormal patterns that might indicate SSRF attempts.
+
+213
+00:14:53,560 --> 00:14:56,800
+Next leverage security tools and frameworks.
+
+214
+00:14:56,800 --> 00:15:02,600
+Use web application firewalls or SSRF detection plugins to detect and block potential attacks
+
+215
+00:15:02,600 --> 00:15:03,600
+in real time.
+
+216
+00:15:03,600 --> 00:15:09,519
+And by combining these measures, you can significantly reduce the chances of SSRF vulnerabilities
+
+217
+00:15:09,519 --> 00:15:15,399
+being exploited, making your applications more resilient against potential threats.
+
+218
+00:15:15,399 --> 00:15:16,560
+And that's a wrap.
+
+219
+00:15:16,560 --> 00:15:22,279
+So in this video, we explored the fascinating yet dangerous world of SSRF attacks.
+
+220
+00:15:22,279 --> 00:15:28,240
+We started by understanding what SSRF is, how it works and its potential impacts.
+
+221
+00:15:28,240 --> 00:15:33,240
+When moved into different types of SSRF attacks, we are world examples and even techniques
+
+222
+00:15:33,240 --> 00:15:35,399
+like blind SSRF.
+
+223
+00:15:35,399 --> 00:15:40,000
+And most importantly, we learnt how to safeguard against these vulnerabilities to keep your
+
+224
+00:15:40,000 --> 00:15:41,480
+system secure.
+
+225
+00:15:41,480 --> 00:15:46,360
+So if you enjoyed listening to this video, please be kind to like it and you can comment
+
+226
+00:15:46,360 --> 00:15:48,440
+on any of your doubts and queries.
+
+227
+00:15:48,440 --> 00:15:50,840
+We will reply to them earlier.
+
+228
+00:15:50,840 --> 00:15:55,480
+And do look up for more videos and playlists and subscribe to Adurikas YouTube channel
+
+229
+00:15:55,480 --> 00:15:56,480
+to learn more.
+
+230
+00:15:56,480 --> 00:15:58,680
+Thank you for watching and Happy Learning!
+
